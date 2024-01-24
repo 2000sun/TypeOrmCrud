@@ -14,7 +14,6 @@ export class CatsService {
   ){}
 
   async create(createCatDto: CreateCatDto) {
-
     console.log('test',this.catRepository);
     console.log("cat",createCatDto);
     return await this.catRepository.save(createCatDto);
